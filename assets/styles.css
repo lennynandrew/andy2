@@ -56,7 +56,7 @@ nav a.active {
 
 /* HERO */
 .hero {
-  background: url("hero-option1.jpg") center/cover no-repeat;
+  background: url("assets/header-wallpaper.jpeg.png") center/cover no-repeat;
   padding: 160px 20px;
   text-align: center;
   color: white;
