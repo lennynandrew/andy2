@@ -56,13 +56,12 @@ nav a.active {
 
 /* HERO */
 .hero {
-  background-image: url("header-wallpaper.jpeg.png");
+  background-image: url("header-clean.png"); /* or .jpg depending on your file */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-}
-  padding: 160px 20px;
+}  padding: 160px 20px;
   text-align: center;
   color: white;
   position: relative;
