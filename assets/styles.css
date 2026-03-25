@@ -179,3 +179,21 @@ header {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.hero-nav {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.hero-nav a {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
