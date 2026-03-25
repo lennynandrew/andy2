@@ -56,11 +56,11 @@ nav a.active {
 
 /* HERO */
 .hero {
-  background: url("hero-option1.jpg") center/cover no-repeat;
-  padding: 160px 20px;
-  text-align: center;
-  color: white;
-  position: relative;
+  background-image: url("header-wallpaper.jpeg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .hero-overlay {
