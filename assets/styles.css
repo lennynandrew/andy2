@@ -145,3 +145,37 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
 }
+/* Make sure the hero container can position elements inside it */
+.hero {
+  position: relative;
+  background-image: url("header-clean.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* This hides the old header bar completely */
+header {
+  display: none;
+}
+
+/* This positions the functional buttons on top of the background image */
+.hero-nav {
+  position: absolute;
+  top: 65%;          /* adjust this number to move buttons up/down */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+/* Button styling */
+.hero-nav a {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
