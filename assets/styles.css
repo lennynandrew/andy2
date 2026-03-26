@@ -152,3 +152,6 @@ footer {
 header {
   display: none;
 }
+.hero-nav {
+  z-index: 3;
+}
