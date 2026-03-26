@@ -166,3 +166,6 @@ header {
   transform: translateX(-50%) !important;
   z-index: 5 !important;
 }
+.hero {
+  border: 5px solid red !important;
+}
