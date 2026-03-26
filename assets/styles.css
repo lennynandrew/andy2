@@ -155,3 +155,14 @@ header {
 .hero-nav {
   z-index: 3;
 }
+.hero {
+  position: relative !important;
+}
+
+.hero-nav {
+  position: absolute !important;
+  top: 60% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 5 !important;
+}
