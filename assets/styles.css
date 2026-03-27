@@ -1,3 +1,4 @@
+@@ -1,157 +1,85 @@
 html { 
   scroll-behavior: smooth; 
 /* ===============================
@@ -31,9 +32,9 @@ body {
    Header
    =============================== */
 .site-header {
-display: flex;
+  display: flex;
   justify-content: space-between;
-align-items: center;
+  align-items: center;
   justify-content: space-between;
   background-color: #001f3f;
   padding: 10px 20px;
@@ -42,7 +43,7 @@ align-items: center;
 
 .top-header img {
 .logo-shield img.shield-logo {
-height: 60px;
+  height: 60px;
   margin-right: 20px;
 }
 
@@ -69,7 +70,7 @@ nav ul {
   margin: 0;
   padding: 0;
 .main-nav ul {
-display: flex;
+  display: flex;
   justify-content: center;
   gap: 40px;
   list-style: none;
@@ -83,9 +84,9 @@ nav a {
   color: white;
 .main-nav ul li a {
   color: #fff;
-text-decoration: none;
+  text-decoration: none;
   font-size: 1.1rem;
-font-weight: bold;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
@@ -104,13 +105,13 @@ nav a.active {
   position: relative;
   background-image: url("header-clean.png");
   background-image: url('../images/hero-background-updated.jpg');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   padding: 160px 20px;
   padding: 120px 20px 80px;
-text-align: center;
+  text-align: center;
   color: white;
 }
 
@@ -165,7 +166,7 @@ section h2 {
   font-size: 2rem;
 .hero h2 {
   font-size: 2.5rem;
-margin-bottom: 20px;
+  margin-bottom: 20px;
   color: #0b1f3b;
   color: #fff;
 }
