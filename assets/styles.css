@@ -151,18 +151,5 @@ header {
   position: relative !important;
 }
 
-.hero-nav {
-  position: absolute !important;
-  top: 60% !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  z-index: 5 !important;
-}
 
-.hero-nav {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
-}
+
