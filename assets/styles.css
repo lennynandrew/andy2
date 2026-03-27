@@ -1,3 +1,5 @@
+html { 
+  scroll-behavior: smooth; 
 /* ===============================
    CTAS Website Stylesheet
    =============================== */
@@ -10,41 +12,66 @@
 }
 
 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fa;
+  color: #222;
   font-family: 'Segoe UI', sans-serif;
   background-color: #000;
   color: #fff;
   line-height: 1.6;
 }
 
+/* HEADER */
+.top-header {
+  background: #0b1f3b;
+  color: white;
+  padding: 10px 20px;
 /* ===============================
    Header
    =============================== */
 .site-header {
-  display: flex;
-  align-items: center;
+display: flex;
+  justify-content: space-between;
+align-items: center;
   justify-content: space-between;
   background-color: #001f3f;
   padding: 10px 20px;
   position: relative;
 }
 
+.top-header img {
 .logo-shield img.shield-logo {
-  height: 60px;
+height: 60px;
   margin-right: 20px;
 }
 
+.top-header .uscom {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 .site-title h1 {
   font-size: 1.5rem;
   color: #fff;
 }
 
+/* NAVIGATION */
+nav {
+  background: #12284d;
+  padding: 12px 20px;
 .site-title p {
   font-size: 0.9rem;
   color: #ccc;
 }
 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 .main-nav ul {
-  display: flex;
+display: flex;
+  justify-content: center;
+  gap: 40px;
   list-style: none;
 }
 
@@ -52,122 +79,129 @@ body {
   margin-left: 20px;
 }
 
+nav a {
+  color: white;
 .main-nav ul li a {
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+text-decoration: none;
+  font-size: 1.1rem;
+font-weight: bold;
   transition: color 0.3s ease;
 }
 
+nav a:hover,
+nav a.active {
+  color: #ffcc00;
 .main-nav ul li a:hover {
   color: #ff4136;
 }
 
+/* HERO */
 /* ===============================
    Hero Section
    =============================== */
 .hero {
-  background-image: url('../images/hero-background-updated.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 140px 20px 100px;
-  text-align: center;
   position: relative;
+  background-image: url("header-clean.png");
+  background-image: url('../images/hero-background-updated.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+  height: 100vh;
+  padding: 160px 20px;
+  padding: 120px 20px 80px;
+text-align: center;
+  color: white;
 }
 
-.hero h2 {
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
   font-size: 2.8rem;
-  margin-bottom: 20px;
-  color: #fff;
-  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  margin-bottom: 10px;
 }
 
 .hero p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  background: #d62828;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 6px;
   font-size: 1.2rem;
-  margin-bottom: 30px;
-  color: #ddd;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Hero Buttons */
-.hero-buttons {
-  margin-top: 25px;
-}
-
-.hero-buttons a {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 28px;
-  background-color: #ff4136;
-  color: #fff;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.hero-buttons a:hover {
-  background-color: #ff725c;
-  transform: scale(1.05);
+.cta-btn:hover {
+  background: #b71f1f;
 }
 
-/* ===============================
-   Shield Overlay (Hero)
-   =============================== */
-.hero-shield {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-}
-
-.hero-shield img {
-  height: 120px;
-  opacity: 0.95;
-}
-
-/* ===============================
-   Sections
-   =============================== */
+/* SECTIONS */
 section {
-  padding: 60px 20px;
-  text-align: center;
+  padding: 70px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 section h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+.hero h2 {
+  font-size: 2.5rem;
+margin-bottom: 20px;
+  color: #0b1f3b;
   color: #fff;
 }
 
-section p {
-  font-size: 1.1rem;
-  color: #ccc;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ===============================
-   Footer
-   =============================== */
+/* FOOTER */
 footer {
-  background-color: #001f3f;
-  padding: 20px;
+  background: #0b1f3b;
+  color: white;
   text-align: center;
-  color: #ccc;
-  font-size: 0.9rem;
+  padding: 20px;
+  margin-top: 40px;
 }
 
-footer a {
-  color: #ff4136;
+/* HERO NAV BUTTONS — CLEAN, FINAL VERSION */
+.hero-nav {
+  position: absolute;
+  top: 20px;        /* Move to top */
+  right: 20px;      /* Move to right */
+  display: flex;
+  gap: 20px;
+  z-index: 5;
+}
+
+.hero-nav a {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 24px;
+  color: white;
   text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-footer a:hover {
-  text-decoration: underline;
+/* HIDE OLD HEADER */
+header {
+  display: none;
 }
-
-
+.hero p {
+  font-size: 
