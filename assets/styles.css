@@ -58,7 +58,7 @@ nav a.active {
 
 /* HERO */
 .hero {
-  background-image: url("header-clean.png");
+  background-image: url("hero-background-updated.jpg"); /* NEW IMAGE */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,32 +122,4 @@ nav a.active {
 
 .hero-nav a {
   background: rgba(0, 0, 0, 0.6);
-  padding: 12px 24px;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-/* SECTIONS */
-section {
-  padding: 70px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #0b1f3b;
-}
-
-/* FOOTER */
-footer {
-  background: #0b1f3b;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
+  padding:
