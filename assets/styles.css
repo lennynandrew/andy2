@@ -1,4 +1,6 @@
-html { scroll-behavior: smooth; }
+html { 
+  scroll-behavior: smooth; 
+}
 
 body {
   margin: 0;
@@ -70,8 +72,10 @@ nav a.active {
 .hero-overlay {
   background: rgba(0, 0, 0, 0.45);
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
 }
 
 .hero-content {
@@ -127,8 +131,15 @@ footer {
   margin-top: 40px;
 }
 
-/* HERO NAV BUTTONS */
-
+/* HERO NAV BUTTONS — CLEAN, FINAL VERSION */
+.hero-nav {
+  position: absolute;
+  top: 20px;        /* Move to top */
+  right: 20px;      /* Move to right */
+  display: flex;
+  gap: 20px;
+  z-index: 5;
+}
 
 .hero-nav a {
   background: rgba(0, 0, 0, 0.6);
@@ -144,12 +155,3 @@ footer {
 header {
   display: none;
 }
-.hero-nav {
-  z-index: 3;
-}
-.hero {
-  position: relative !important;
-}
-
-
-
