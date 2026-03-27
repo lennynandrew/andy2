@@ -58,7 +58,7 @@ nav a.active {
 
 /* HERO */
 .hero {
-  background-image: url("css/hero-background-updated.jpg"); /* CORRECT PATH */
+  background-image: url("css/hero-background-updated.jpg.png"); /* CORRECT FILE NAME */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
