@@ -1,184 +1,115 @@
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: #f4f6fa;
-color: #222;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fa;
+  color: #222;
 }
 
 /* HEADER */
 .top-header {
-background: #0b1f3b;
-color: white;
-padding: 10px 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  background: #0b1f3b;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .top-header img {
-height: 60px;
+  height: 60px;
 }
 
 .top-header .uscom {
-font-size: 1.4rem;
-font-weight: bold;
-letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 /* NAVIGATION */
 nav {
-background: #12284d;
-padding: 12px 20px;
+  background: #12284d;
+  padding: 12px 20px;
 }
 
 nav ul {
-list-style: none;
-margin: 0;
-padding: 0;
-display: flex;
-justify-content: center;
-gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 nav a {
-color: white;
-text-decoration: none;
-font-size: 1.1rem;
-font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 nav a:hover,
 nav a.active {
-color: #ffcc00;
+  color: #ffcc00;
 }
 
 /* HERO */
 .hero {
-background-image: url("header-clean.png");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-height: 100vh;
-}  padding: 160px 20px;
-text-align: center;
-color: white;
-position: relative;
+  background-image: url("header-clean.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 160px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
 .hero-overlay {
-background: rgba(0, 0, 0, 0.45);
-position: absolute;
-top: 0; left: 0;
-width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
 }
 
 .hero-content {
-position: relative;
-z-index: 2;
-max-width: 900px;
-margin: auto;
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: auto;
 }
 
 .hero h1 {
-font-size: 2.8rem;
-margin-bottom: 10px;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
 }
 
 .hero p {
-font-size: 1.3rem;
-margin-bottom: 25px;
+  font-size: 1.3rem;
+  margin-bottom: 25px;
 }
 
 .cta-btn {
-background: #d62828;
-color: white;
-padding: 14px 28px;
-border-radius: 6px;
-font-size: 1.2rem;
-text-decoration: none;
-font-weight: bold;
+  background: #d62828;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .cta-btn:hover {
-background: #b71f1f;
+  background: #b71f1f;
 }
 
-/* SECTIONS */
-section {
-padding: 70px 20px;
-max-width: 1000px;
-margin: auto;
-}
-
-section h2 {
-font-size: 2rem;
-margin-bottom: 20px;
-color: #0b1f3b;
-}
-
-/* FOOTER */
-footer {
-background: #0b1f3b;
-color: white;
-text-align: center;
-padding: 20px;
-margin-top: 40px;
-}
-
-.hero-nav {
-position: absolute;
-top: 65%;
-left: 50%;
-transform: translateX(-50%);
-display: flex;
-gap: 20px;
-}
-
-.hero-nav a {
-background: rgba(0, 0, 0, 0.6);
-padding: 12px 24px;
-color: white;
-text-decoration: none;
-border-radius: 6px;
-font-size: 1.2rem;
-font-weight: bold;
-}
-/* Make sure the hero container can position elements inside it */
-.hero {
-position: relative;
-background-image: url("header-clean.png");
-background-size: cover;
-background-position: center;
-height: 100vh;
-}
-
-/* This hides the old header bar completely */
-header {
-display: none;
-}
-
-/* This positions the functional buttons on top of the background image */
-.hero-nav {
-position: absolute;
-top: 65%;          /* adjust this number to move buttons up/down */
-left: 50%;
-transform: translateX(-50%);
-display: flex;
-gap: 20px;
-}
-
-/* Button styling */
-.hero-nav a {
-background: rgba(0, 0, 0, 0.6);
-padding: 12px 24px;
-color: white;
-text-decoration: none;
-border-radius: 6px;
-font-size: 1.2rem;
-font-weight: bold;
-}
+/* HERO NAV BUTTONS */
 .hero-nav {
   position: absolute;
   top: 65%;
@@ -186,6 +117,7 @@ font-weight: bold;
   transform: translateX(-50%);
   display: flex;
   gap: 20px;
+  z-index: 3;
 }
 
 .hero-nav a {
@@ -196,4 +128,26 @@ font-weight: bold;
   border-radius: 6px;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0b1f3b;
+}
+
+/* FOOTER */
+footer {
+  background: #0b1f3b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
