@@ -189,3 +189,25 @@ footer {
         flex-direction: column;
     }
 }
+/* --- FINAL FIX FOR BACKGROUND AND LOGO --- */
+
+.hero {
+    /* This matches your file name: header-wallpaper.jpeg.png */
+    background-image: url("header-wallpaper.jpeg.png") !important; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.top-header img {
+    /* This matches your file name: header-clean.png */
+    height: 60px;
+    content: url("header-clean.png");
+}
