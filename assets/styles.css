@@ -158,3 +158,15 @@ footer {
     height: 60px !important;
     width: auto !important;
 }
+/* --- THE "OUTSIDE THE FOLDER" FIX --- */
+.hero {
+    background-color: #0b1f3b !important; 
+    /* The "../" tells the code to look OUTSIDE the assets folder */
+    background-image: url("../../hero.png") !important; 
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
